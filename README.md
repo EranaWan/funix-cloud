@@ -61,11 +61,11 @@ To deploy a file, you need to provide a `requirements.txt` file to determine whi
 funix-cloud deploy [Local folder or git link: example: "my-project"] [Application Name, example: "my-first-app"] --file main.py
 ```
 
-The `--file` option specifies the program entry file, which defaults to `main.py`. Note: To deploy a local folder, you will also need a `requirements.txt`. The file should exist in the same directory as the folder you are deploying, not inside the folder itself. 
+The `--file` option specifies the program entry file, which defaults to `main.py`. Note: To deploy a local folder, you will also need a `requirements.txt`. The file should exist inside the folder you are deploying. 
 
 ### requirements.txt File
 
-To deploy a file or folder, you will need a `requirements.txt` file to specify required dependencies. This file should exist in the same directory as the file or folder you are deploying. Simply add the names of any library/ packages your program uses. You can additionally specify versions of the installation. Below is an example for a project usinf dependencies funix, openai (version 1.1.1 or later), and requests.  
+To deploy a file or folder, you will need a `requirements.txt` file to specify required dependencies. This file should exist in the same directory as the file you are deploying, or within the folder you are deploying if deploying a folder. Simply add the names of any library/ packages your program uses. You can additionally specify versions of the installation. Below is an example for a project using dependencies funix, openai (version 1.1.1 or later), and requests.  
 
 ```plaintext
 funix
